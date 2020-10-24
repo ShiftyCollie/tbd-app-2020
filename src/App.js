@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import Headers from './Headers';
-import Breadcrumb from './Breadcrumb';
+import UCPButton from './UCPButton';
 
 function App() {
   return (
     <div className="App">      
       <Headers/>
-    <Disclaimer/>
-      <Breadcrumb/>
+      <UCPButton/>
     </div>
   );
 }
