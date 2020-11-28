@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
+}
+.UserInfo span
+{
+    font-size: 12px;
 }
 .LoginButton {
     float: right;
@@ -12,20 +17,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
-    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    color: #005C6E;
     margin: 0% 0% 1% 5%;
 }
 
 .ContainerStyle {
+    margin-top: 10px;
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #31B7BC;
-    position: absolute;
-    border-radius: 17px;
-    width: 40% !important;
+    position: center;
     left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 40% !important;
+    top: 50%  !important;
+  
 }
+.MobileContainerStyle {
+    margin-top: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #31B7BC;
+    position: center;
+    left: 50%;
+    width: 90% !important;
+    top: 250px !important;
+
+}
+.mobiletextbox input{
+    width: 250px;
+    text-align: center;
+}
+.mobiletextbox{
+    width: 200px;
+}
+.mobiletextbox label{
+    margin-left: 5px;
+}
+

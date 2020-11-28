@@ -2,7 +2,8 @@ import React from 'react';
 import './Calendar.css';
 import UCPButton from '../Buttons/UCPButton';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
-import {Container} from 'react-bootstrap';
+import { Col, Container, Row} from 'react-bootstrap';
+import Jumbotron from '../Jumbotron/Jumbotron';
 
 const options = [
     { value: '0', label: '9:00' },
@@ -23,24 +24,55 @@ export default function Calendar (){
  
      return (
 
-      <Container>
-           <table>
-        <th><UCPButton className="largebutton" buttonText="Week Commencing 26/10/2020"/></th>
-        <th><UCPButton className="largebutton" buttonText="Week Commencing 2/11/2020"/></th>
-        <th><UCPButton className="largebutton" buttonText="Week Commencing 9/11/2020"/></th>
-        <th><UCPButton className="largebutton" buttonText="Week Commencing 16/11/2020"/></th>
-        </table> 
+      <Container >
+           <Row className="WeeksButton">
+        <Col><UCPButton className="largebutton" buttonText="Week Commencing 26/10/2020"/></Col>
+        <Col><UCPButton className="largebutton" buttonText="Week Commencing 2/11/2020"/></Col>
+        <Col><UCPButton className="largebutton" buttonText="Week Commencing 9/11/2020"/></Col>
+        <Col><UCPButton className="largebutton" buttonText="Week Commencing 16/11/2020"/></Col>
+        </Row> 
+
+      <br></br>
+      <br></br>
      
-      <table>
+      <Row className="DaysButton">
      
-        <th><UCPButton className="mediumbutton" buttonText="Monday"/></th>
-        <th><UCPButton className="mediumbutton" buttonText="Tuesday"/></th>
-        <th><UCPButton className="mediumbutton" buttonText="Wednesday"/></th>
-        <th><UCPButton className="mediumbutton" buttonText="Thursday"/></th>
-        <th><UCPButton className="mediumbutton" buttonText="Friday"/></th>
+        <Col><UCPButton className="mediumbutton" buttonText="Monday"/></Col>
+        <Col><UCPButton className="mediumbutton" buttonText="Tuesday"/></Col>
+        <Col><UCPButton className="mediumbutton" buttonText="Wednesday"/></Col>
+        <Col><UCPButton className="mediumbutton" buttonText="Thursday"/></Col>
+        <Col><UCPButton className="mediumbutton" buttonText="Friday"/></Col>
       
-      </table>
-      <DropdownMenu options = {options}/>
+      </Row >
+      <br></br>
+      <br></br>
+      
+      <Row>
+        <Col>
+      <DropdownMenu className="Dropdown" options = {options}/>
+      </Col>
+      <Col>
+      <Jumbotron/>
+      </Col>
+      </Row>
+
+     
+        <Row className="DaysButton">
+
+        
+
+    
+<br></br>
+
+      
+     
+        <Col><UCPButton className="mediumbutton" buttonText="Refresh"/></Col>
+        <Col><UCPButton className="mediumbutton" buttonText="Confirm"/></Col>
+        
+      
+      
+      </Row >
+      
     </Container>
      )
  

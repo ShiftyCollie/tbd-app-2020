@@ -18,29 +18,28 @@ exports[`Renders Disclaimer 1`] = `
         data-testid="ucpDisclaimer"
       >
         <p>
-            
           <b>
-            PRIVACY STATEMENT:
+            Hello undefined, Please Read!
           </b>
           <br />
-           We will only use your personal information to administer your application and / or enrolment and to provide the products and services you have requested from us.
+          <b>
+            Hello you're through to the University Centre Peterborough Clearing Team - how can I help?
+          </b>
           <br />
-           Further information on our privacy policy can be found at https://www.ucp.ac.uk/privacy-and-cookies/ or by emailing 
-          <a
-            class="text"
-            href="mailto:hello@ucp.ac.uk"
-          >
-            hello@ucp.ac.uk
-          </a>
+          We will only use your personal information to administer your application and / or enrolment and to provide the products and services you have requested from us. Further information on our privacy policy can be found at https://www.ucp.ac.uk/privacy-and-cookies/ or by emailing hello@ucp.ac.uk
         </p>
-        <button
-          class="smallbutton"
-          data-testid="ucpButton"
-          primary="True"
-          type="button"
+        <div
+          id="acceptButton"
         >
-          close​
-        </button>
+          <button
+            class="smallbutton"
+            data-testid="ucpButton"
+            primary="True"
+            type="button"
+          >
+            Accept​
+          </button>
+        </div>
       </div>
     </form>
   </div>
